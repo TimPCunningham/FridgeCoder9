@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.panel {
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  padding-bottom: 50px;
+}
+
+.operate {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.operate button {
+  width: 50%;
+  height: 35px;
+  background: transparent;
+  border: 2px solid #59da68;
+  color: #59da68;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Comic Sans MS';
+  border-radius: 10px;
+}
+
+.operate button:hover {
+  border: 2px solid #82ff91;
+  color: #82ff91;
+}
+
+.letterbox {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 5px;
+  overflow-y: scroll;
+}
+
+.fridge {
+  margin-left: 15%;
+  width: 85%;
+  height: auto;
+}
+
+.fridge img {
+  width: 100%;
+}
+
+.lines {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 85%;
+  margin-left: 15%;
+}
+
+.line {
+  width: 100%;
+  border-bottom: 3px solid rgba(0,0,0,.03);
+  color: rgba(0,0,0,.10);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Comic Sans MS";
+  padding-left: 10px;
+}
+
+.letter-option, .drop-element {
+  line-height: 25px;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Comic Sans MS";
+  cursor: pointer;
+
+}
+
+.drop-element {
+  position: absolute;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}

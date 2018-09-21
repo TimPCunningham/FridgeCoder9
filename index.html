@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Fridge Coder 9</title>
+</head>
+<body>
+  <div class="container">
+    <div class="panel">
+      <div class="operate"><button onclick="run()">Run</button></div>
+      <div class="letterbox" ondrop="dropOptions(event)" ondragover="allowDrop(event)">
+    </div>
+    </div>
+    <div class="fridge" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="img/fridge.jpg" alt="">
+      <div class="lines">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
